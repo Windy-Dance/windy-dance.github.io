@@ -17,7 +17,7 @@
   <meta name="description" content="一个技术人,会聊聊包括Python,Go在内的编程技术,也会发教程和一些个人感悟.">
   <meta name="author" content="风的波折">
   <meta name="keywords" content="Python, Go, Rust, Java, C, C++, Hexo">
-  <title>LostDungeon之壹 - 风之舞的博客</title>
+  <title>风之舞的博客</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -171,7 +171,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      13 字
+      632 字
     </span>
   
 
@@ -181,7 +181,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      10
        分钟
     </span>
   
@@ -211,30 +211,35 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">LostDungeon之壹</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body" id="post-body">
-              <h1 id="迷失地牢开发"><a href="#迷失地牢开发" class="headerlink" title="迷失地牢开发"></a>迷失地牢开发</h1><p>写作中,稍安勿躁!</p>
+              <hr>
+<p>title: LostDungeon之壹<br>date: 2020-08-23 21:21:43<br>tags: LostDungeon迷失地牢<br>categories: LostDungeon迷失地牢<br>-</p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>作为一个地牢RPG游戏狂热爱好者，我闲暇时间总是会搜罗一些地牢之类的游戏。</p>
+<p>但是！</p>
+<p>这个题材里，优秀的作品太少了。我接触过良心作品的有《贪婪洞窟》，《不思议地下城》，还有一个用Java写的开源地牢游戏《像素地牢》(这个游戏最吸引人的地方就是丰富的mod生态，只要你会Java可以去GitHub上下载源代码并且自己开发mod。实际上，有一个mod，叫做“破碎的像素地牢”，知名度已经超过了原作品。可以去GitHub搜索“Pixel Dungeon”查看源代码)</p>
+<p>其他的地牢游戏，我就不敢恭维了(DNF只是我不喜欢它的游戏机制，作品本身还是神作)。况且一款游戏游玩多了难免会产生厌倦感，还不说除了开源的那个，其他的都是商业游戏(为了恰饭…)。</p>
+<p>基于上面这些点，我决定自己开发一个地牢RPG游戏。既然是自己开发自己玩，比起商业游戏，有以下几大好处：</p>
+<ul>
+<li>可以开源让更多人来完善，一千个人心中有一千个哈姆雷特，说不定最后会演变成一些独立的游戏，大大提高新鲜感。</li>
+<li>自己的游戏，可以针对痛点马上做出解决方案，而不是等着开发者发布新版本(有了新版本也不一定刚好解决了你的痛点)</li>
+<li>这个项目本身需要你维护，可以提升编程及策划能力，如果做得好还可以为你的开源历史加上一笔浓墨重彩。</li>
+</ul>
+<p>总结：自己开发，爽！</p>
+<p>PS：<del>既然是自己开发，我本人也不是个游戏画面控，那就干脆在控制台里呈现游戏吧</del>。如果有时间我再开发GUI界面</p>
+<h1 id="构造"><a href="#构造" class="headerlink" title="构造"></a>构造</h1><p>一个地牢RPG游戏，主要可以分为以下几个板块：</p>
+<p>角色，怪物，头目，技能，装备，物品，控制</p>
+<p>所以，此时我们可以新建一个工程，叫做 LostDungeon(VsCode叫做WorkSpace,有专门的”.code-workspace”文件，而PyCharm是直接打开一个文件夹作为Project)，并创建文件。结构图如下:</p>
+<p><img src="https://img-blog.csdnimg.cn/20200824181452487.png#pic_center" srcset="/img/loading.gif" alt="项目结构图"></p>
+<p>其中，LostDungeon就是main文件。</p>
+<h1 id="END"><a href="#END" class="headerlink" title="END"></a>END</h1><p>这篇文章结束了，感兴趣的话去<a href="windy-dance.github.io">我的个人博客</a>，分类页查看本文章哟!(本文分类为LostDungeon)</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/LostDungeon%E8%BF%B7%E5%A4%B1%E5%9C%B0%E7%89%A2/">LostDungeon迷失地牢</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/LostDungeon%E8%BF%B7%E5%A4%B1%E5%9C%B0%E7%89%A2/">LostDungeon迷失地牢</a>
-                    
-                  </div>
                 
               </div>
               
@@ -430,7 +435,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "LostDungeon之壹&nbsp;",
+        "&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
