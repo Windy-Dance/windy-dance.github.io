@@ -61,11 +61,16 @@
 
 
 
+  
+<link rel="stylesheet" href="/css/img_blur.css">
+<link rel="stylesheet" href="/css/card.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"windy-dance.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":" ","loop":false,"scope":[],"text":"我抛弃了所有的忧伤和疑虑, 去追逐那无家的潮水. \\n因为那永恒的异乡人在呼唤我, 她正沿着这条路走来."},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"windy-dance.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":" ","loop":false,"scope":[],"text":["我抛弃了所有的忧伤和疑虑, 去追逐那无家的潮水. 因为那永恒的异乡人在呼唤我, 她正沿着这条路走来."]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":true,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -193,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="我抛弃了所有的忧伤和疑虑, 去追寻那无家的潮水. 因为那永恒的异乡人在呼唤我, 她正沿着这条路走来."></span>
+            <span id="subtitle" data-typed-text="我抛弃了所有的忧伤和疑虑, 去追逐那无家的潮水. 因为那永恒的异乡人在呼唤我, 她正沿着这条路走来."></span>
           
         </div>
 
@@ -228,7 +233,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2025/09/30/I-Start-It-With-This/" target="_self">
+          <img src="/img/post_default.jpg" srcset="/img/loading.gif" lazyload alt="I Start It With This!">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h2 class="index-header">
         
         <a href="/2025/09/30/I-Start-It-With-This/" target="_self">
@@ -237,7 +248,7 @@
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/09/30/I-Start-It-With-This/" target="_self">
+      <a class="index-excerpt " href="/2025/09/30/I-Start-It-With-This/" target="_self">
         <div>
           Past记得那还是三年前，我性质颇高地搭好了自己的第一个blog，此后陆续在上面更新了不少文章：小说，开发日志，杂感…… 那个时候只是单纯觉得coding非常好玩，兴致高涨地学了Python，前端后端，爬虫，桌面应用，小游戏(pygame)都接触了一点。现在经历了删库和博客重组，已是雪泥鸿爪，难寻其迹. The Past Is A Foreign Country这句话是David Lowentha
         </div>
@@ -263,7 +274,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/feelings/" class="category-chain-item">feelings</a>
+  <a href="/categories/Feelings/" class="category-chain-item">Feelings</a>
   
   
 
@@ -368,7 +379,7 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
 
   <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.configure({"showSpinner":true,"trickleSpeed":100})
     NProgress.start()
     window.addEventListener('load', function() {
       NProgress.done();
@@ -412,6 +423,11 @@
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
+
+
+  
+<script src="/scripts/img_blur.js"></script>
+<script src="/scripts/slogan.js"></script>
 
 
 
