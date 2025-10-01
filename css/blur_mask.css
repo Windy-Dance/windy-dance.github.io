@@ -1,0 +1,32 @@
+/* 可爱毛玻璃加载蒙版样式喵~ */
+.blur-mask-meow {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  z-index: 9999;
+  pointer-events: none;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(18px) saturate(1.2);
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blur-mask-meow.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.blur-mask-meow .meow-text {
+  font-size: 2.2rem;
+  color: #6ec1e4;
+  text-shadow: 0 2px 16px #fff8;
+  font-family: 'Comic Sans MS', 'CuteFont', 'sans-serif';
+  user-select: none;
+  letter-spacing: 0.12em;
+  animation: meow-bounce 1.2s infinite alternate;
+}
+@keyframes meow-bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-18px); }
+}

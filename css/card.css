@@ -1,13 +1,16 @@
 
+
+
 .index-card {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(2px) saturate(180%);
+  background: transparent;
+  backdrop-filter: none;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   transition: background 0.3s, backdrop-filter 0.3s, box-shadow 0.3s, transform 0.3s;
   position: relative;
   overflow: hidden;
 }
+
 
 
 .index-card:hover {
@@ -19,34 +22,12 @@
 
 
 
-.index-card .ripple {
-  position: absolute;
-  pointer-events: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,150,255,0.18) 0%, rgba(0,150,255,0.08) 60%, transparent 100%);
-  opacity: 0;
-  transition: opacity 0.6s, transform 0.3s;
-  z-index: 2;
-  will-change: opacity, transform;
-}
 
-.ripple-trail {
-  position: absolute;
-  pointer-events: none;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,150,255,0.10) 0%, transparent 100%);
-  opacity: 0.7;
-  z-index: 2;
-  animation: rippleFade 1.2s linear forwards;
-}
 
-@keyframes rippleFade {
-  to {
-    opacity: 0;
-    transform: scale(1.8);
-  }
-}
+
+
+
+/* 鼠标特效相关代码已删除 */
+
+
+/* 已去除拖痕动画，仅保留主ripple跟随鼠标 */
